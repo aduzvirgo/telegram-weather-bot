@@ -22,7 +22,7 @@ bot.on("message", async (msg) => {
 
   try {
     const response = await axios.get(
-      `https://api.openweathermap.org/data/2.5/weather?q=${userInput}&appid=ea05f0b6617d998492f421c4335d3bba`
+      `https://www.weatherapi.com/my/?q=${userInput}&appid=a5262b5f79f24d558c290356233010`
     );
     const data = response.data;
     const weather = data.weather[0].description;
